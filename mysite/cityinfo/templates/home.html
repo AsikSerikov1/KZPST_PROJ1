@@ -1,0 +1,387 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Города</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'boxicons-2.1.4/css/boxicons.min.css' %}">
+
+</head>
+<body>
+
+<div class="navik">
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav m-auto" style="display: flex; align-items: center;">
+        <li class="nav-item">
+          <a class="nav-link" id="nav-text"><i class='bx bx-map' ></i> {{ city_info.address }}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="nav-text"><i class='bx bx-phone' ></i> {{ city_info.phone }}</a>
+        </li>
+        <li class="nav-item dropdown" style="margin-left: 50px;">
+          <form method="get" id="cityForm" class="form-inline">
+            {{ form }}
+        </form>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+
+<div class="navik-2">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="https://aokuzet.kz/upload/images/94181_605771_12.png" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav m-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" id="nav-text-main" href="#">Главная</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="nav-text-2" href="#">О компаний</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="nav-text-2" href="#">Услуги</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="nav-text-2" href="#">Отзывы</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="nav-text-2" href="#">Новости</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="nav-text-2" href="#">Контакты</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<div class="border-1">
+  <div class="container">
+  </div>
+</div>
+
+<div class="border-2">
+  <div class="container">
+    <div class="sub-border-2">
+      <div>
+        <h3 class="text-border-2">Вам необходима консультация? Оставьте заявку</h3>
+      </div>
+      <div>
+        <button class="btn-1">
+          <span class="text-btn-1">ЗАКАЗАТЬ ЗВОНОК <i class='bx bx-right-arrow-alt' ></i></span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="border-3">
+  <div class="container">
+    <div class="sub-border-3">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-5">
+
+        <div class="col">
+          <div class="card">
+            <img src="https://aokuzet.kz/upload/images/small/3267_548779_17.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Промышленные обьекты</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col">
+          <div class="card">
+            <img src="https://aokuzet.kz/upload/images/small/77616_449526_17.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Частные компаний</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col">
+          <div class="card">
+            <img src="https://aokuzet.kz/upload/images/small/91392_911741_17.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Физические лица</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col">
+          <div class="card">
+            <img src="https://aokuzet.kz/upload/images/small/38316_590490_17.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Государственные учреждения</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="border-4">
+  <div class="container">
+    <div class="sub-border-4">
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 g-5" style="display: flex; align-items: center;">
+        <div class="scroll-block left">
+          <div class="col">
+            <div class="card">
+              <img src="https://aokuzet.kz/upload/images/94007_130604_07.jpg" class="card-img-top" alt="...">
+            </div>
+          </div>
+        </div>
+        <div class="scroll-block right">
+          <div class="col">
+            <div class="col_2-b4">
+              <h3 class="b4-h3">Обеспечиваем безопасность с 1952 года</h3>
+              <br>
+              <p class="b4-p">АО «СОП «Кузет» — первая охранная компания в Казахстане, имеющая богатый практический опыт по обеспечению безопасности крупных стратегических, промышленных, производственных, нефтегазовых, финансовых и иных объектов.</p>
+              
+              <div class="progress-container">
+                <div class="progress-bar" data-percentage="90">Удовлетворенность клиентов 90%</div>
+              </div>
+              <div class="progress-container">
+                <div class="progress-bar" data-percentage="80">Исполнение 80%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="border-5">
+    <div class="scroll-block up">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-md-3 row-cols-lg-5 g-5">
+        <div class="col">
+          <div class="stats">
+            <div class="number-2">№1</div>
+            <p>охранная компания в Казахстане</p>
+          </div>
+        </div>
+      <div class="col">
+        <div class="stats">
+          <div class="number" data-start="5" data-end="20">20</div>
+          <p>филиалов во всех регионах Казахстана</p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="stats">
+          <div class="number" data-start="40" data-end="70">40</div>
+          <p>лет в сфере безопасности</p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="stats">
+          <div class="number" data-start="800000" data-end="1000000">800000</div>
+          <p>до $1 млн. страховых гарантий</p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="stats">
+          <div class="number" data-start="2000" data-end="3000">2000</div>
+          <p>сотрудников по Казахстану</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>  
+</div>
+
+
+<div class="border-6">
+  <div class="container">
+    <div class="sub-border-6">
+        <h2 class="h2-b6">Офисы в 20 регионах Казахстана</h2>
+    </div>
+  </div>
+</div>
+
+<div class="border-7">
+  <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2770a7b17b39344e56288e15010525832935234f536fb2bf7c73e4770a1cb875&amp;width=100%&amp;height=463&amp;lang=ru_RU&amp;scroll=true"></script>
+</div>
+
+<footer class="text-light footer">
+  <div class="container py-4">
+    <div class="row">
+      <div class="col-md-3">
+        <h5 class="style_footer_line">Услуги</h5>
+        <ul class="list-unstyled">
+          <li>Промышленные объекты</li>
+          <li>Частные компании</li>
+          <li>Физические лица</li>
+          <li>Государственные учреждения</li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h5 class="style_footer_line">О нас</h5>
+        <ul class="list-unstyled">
+          <li>О компании</li>
+          <li>Услуги</li>
+          <li>Контакты</li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h5 class="style_footer_line">Контакты</h5>
+        <p>{{ city_info.address }}</p>
+        <p>{{ city_info.phone }}</p>
+        <!-- Используйте свои номера и почту -->
+        <p>email@example.com</p>
+      </div>
+      <div class="col-md-3">
+        <h5 class="style_footer_line">Подписаться</h5>
+        <!-- Социальные иконки или форма подписки -->
+        <!-- Используйте соответствующие классы иконок из вашего набора иконок -->
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', (event) => {
+  let animated = false;
+
+  function animateProgressBar() {
+    if (animated) return; 
+    let progressBars = document.querySelectorAll('.progress-bar');
+
+    for (let bar of progressBars) {
+      let targetPercentage = bar.getAttribute('data-percentage');
+      bar.style.width = targetPercentage + '%';
+      bar.textContent = targetPercentage + '%';
+    }
+
+    animated = true;
+  }
+
+  function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  }
+
+  window.addEventListener('scroll', function() {
+    document.querySelectorAll('.progress-container').forEach((item, index) => {
+      if (isInViewport(item)) {
+        animateProgressBar();
+      }
+    });
+  });
+});
+
+</script>
+
+<script>
+  function animateValue(obj, start, end, duration) {
+  let startTimestamp = null;
+  const step = (timestamp) => {
+    if (!startTimestamp) startTimestamp = timestamp;
+    const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+    const currentValue = Math.floor(progress * (end - start) + start);
+    obj.textContent = currentValue.toLocaleString();
+    if (progress < 1) {
+      window.requestAnimationFrame(step);
+    }
+  };
+  window.requestAnimationFrame(step);
+}
+
+document.addEventListener('DOMContentLoaded', (event) => {
+  let animated = false;
+
+  function animateNumbers() {
+    if (animated) return;
+    document.querySelectorAll('.number').forEach((number) => {
+      const startValue = parseInt(number.getAttribute('data-start'), 10);
+      const endValue = parseInt(number.getAttribute('data-end'), 10);
+      animateValue(number, startValue, endValue, 2000); // Анимация в течение 2000ms
+    });
+    animated = true;
+  }
+
+  function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  } 
+
+  window.addEventListener('scroll', function() {
+    document.querySelectorAll('.stats').forEach((item) => {
+      if (isInViewport(item)) {
+        animateNumbers();
+      }
+    });
+  });
+});
+
+</script>
+
+<script>
+  function revealOnScroll() {
+  var scrollBlocks = document.querySelectorAll('.scroll-block');
+
+  for (var i = 0; i < scrollBlocks.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = scrollBlocks[i].getBoundingClientRect().top;
+    var elementVisible = 100; // Насколько далеко элемент должен быть от верха экрана, чтобы стать видимым
+
+    if (elementTop < windowHeight - elementVisible) {
+      scrollBlocks[i].classList.add('visible');
+    } else {
+      scrollBlocks[i].classList.remove('visible');
+    }
+  }
+}
+
+window.addEventListener('scroll', revealOnScroll);
+
+</script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.12/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+    document.getElementById("id_name").onchange = function() {
+    var selectedOption = this.options[this.selectedIndex];
+    document.getElementById("navbarDropdownMenuLink").textContent = selectedOption.text;
+    // Остальной код AJAX...
+};
+
+</script>
+
+</body>
+</html>
